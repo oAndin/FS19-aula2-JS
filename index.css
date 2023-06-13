@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    display: none;
+}
+.pergunta {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 35px #00000055;
+    position: fixed;
+    top: 50%;
+    left: calc(65% - 150px);
+    transform: translateY(-50%);
+    padding: 16px;
+    transition-duration: 1500ms;
+    transition-delay: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pergunta.active {
+    opacity: 1;
+    visibility: visible;
+    left: calc(50% - 150px);
+}
+
+input[type="number"] {
+    border: 1px solid #000;
+}
+input[type="number"]:invalid {
+    border: 1px solid red;
+}
+
